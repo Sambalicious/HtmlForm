@@ -49,7 +49,7 @@ body{
 
 }
 
-.textbox input{
+.textbox input[type = "text"],.textbox input[type = "email"] ,.textbox input[type = "button"]{
     border: none;
     outline: none;
     background: none;
@@ -58,7 +58,14 @@ body{
     
     float: left;
     margin: 0 10px;
+    transition: 0.2s;
 
+}
+
+.textbox input:focus[type = "text"],.textbox input:focus[type = "email"] ,.textbox input:focus[type = "button"]{
+    width:300px;
+    border-left: 10px solid  #4caf50;
+    
 }
 
 .btn{
