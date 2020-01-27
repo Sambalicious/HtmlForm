@@ -12,7 +12,7 @@ body{
 
 
 .login-box{
-    width: 290px;
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,10 +63,12 @@ body{
 }
 
 .textbox input:focus[type = "text"],.textbox input:focus[type = "email"] ,.textbox input:focus[type = "button"]{
-    width:300px;
+    width:280px;
     border-left: 10px solid  #4caf50;
     
+    
 }
+
 
 .btn{
     width: 100%;
@@ -77,11 +79,30 @@ body{
     font-size: 18px;
     cursor: pointer;
     margin: 12px 0;
+    transition: background 0.5s;
+    
+}
+
+.btn:hover, .btn:focus{
+    background: #4caf50;
+    color: black;
+    
 }
 
 .btn:hover{
     background: #4caf50;
-    color: black
+    color: black;
+}
+
+
+
+.btn:focus {
+    
+    outline-offset: -10px;
+}
+
+.btn:active {
+    transform: scale(0.5);
 }
 
 
