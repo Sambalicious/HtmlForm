@@ -49,7 +49,7 @@ body{
 
 }
 
-.textbox input[type = "text"],.textbox input[type = "email"] ,.textbox input[type = "button"]{
+.textbox input[type = "text"],.textbox input[type = "email"],.textbox input[type = "password"] ,.textbox input[type = "button"]{
     border: none;
     outline: none;
     background: none;
@@ -61,8 +61,7 @@ body{
     transition: 0.2s;
 
 }
-
-.textbox input:focus[type = "text"],.textbox input:focus[type = "email"] ,.textbox input:focus[type = "button"]{
+.textbox input:focus[type = "text"],.textbox input:focus[type = "password"],.textbox input:focus[type = "email"] ,.textbox input:focus[type = "button"]{
     width:280px;
     border-left: 10px solid  #4caf50;
     

@@ -9,60 +9,48 @@
     <title>Registation |Page</title>
 </head>
 <body>
-    <!--
-        **************w3 school form***************
-    <form action="">
-        <div class="container">
-            <h1>Register here</h1>
-            <p>kindly provide your details here</p>
-            <hr>
-            <label for="name"><b>Name:</b></label>
-                <input type="text" placeholder="Enter your name" name="name" required><br>
-            <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="create a username" name="username" required><br>
-            <label for="gender">Gender:</label><br><br>
-                <input type="checkbox" value="male" name="male">Male<br>
-                <input type="checkbox" value="female" name="female">Female <br><br>
-            <button type="submit" class="registerbtn">Submit</button>
-
-
-        </div>
-
-
-
-        <div class="container signin">
-            <p>Already have an account? <a href="#">Sign in</a>.</p>
-          </div>
-    </form>
-
-    -->
-     <!-- My best form here-->
-    <div class="login-box">
-        <h1>Venture Garden Group SignUp Form </h1>
+    
+        <form action="index.html">
+            <div class="login-box">
+                <h1>Venture Garden Group SignUp Form </h1>
         <div class="textbox">
             <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Your name" name="" value="">
+            <input type="text" id="fullname" placeholder="Your name" name="name" 
+            required>
             
         </div>
              
         <div class="textbox">
             <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Create a username" name="" value="">
-            
+            <input type="text" id="username" placeholder="Create a username" name="username" 
+            required>
         </div>
+
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="password" id="password" placeholder="Create Your Password" 
+            name="password" title="password must be between 6 to 8 character" 
+            required> 
+        </div>
+
         <div class="textbox">
             <i class="fa fa-envelope-square"></i>
-            <input type="email" placeholder="Enter your email address" name="" value="">
-             
+            <input type="password" id="cpass" placeholder="Confirm Password" 
+            minlength="8" maxlength="16" name="cpass" required>
+        </div>
+
+        <div class="textbox">
+            
+            <input type="checkbox" id="checkbox"
+             placeholder="Create Your Password" required>I agree to the terms and conditions
         </div>
         
-        <input type="button" class="btn" value="Submit" name="">
+        <input type="button" id="submit" class="btn" value="Submit" name="">
           
-
     </div>
 
-  
+</form>
 
-
+    <script src="app.js"></script>
 </body>
 </html>
