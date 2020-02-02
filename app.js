@@ -20,7 +20,7 @@ if (name.trim() && username.trim() && password && cpass){
         console.log(`your name is ${name}`);
         console.log(`your username is ${username}`);
         console.log(`your password is ${password}`);
-        console.log(`you confirm password is ${cpass}`);
+        console.log(`your confirm password is ${cpass}`);
         
         alert(`hello ${username}, You are now logged in`);
     }
