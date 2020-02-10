@@ -25,7 +25,7 @@ if (name.trim() && username.trim() && password && cpass){
         alert(`hello ${username}, You are now logged in`);
     }
     else{
-    alert(' password and confirm password does not match')
+    alert('Your password and confirm password does not match')
 
     
     }

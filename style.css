@@ -38,9 +38,12 @@ html,body{
     width: 100%;
     overflow: hidden;
     font-size: 20px;
-    padding: 8px 0;
-    margin: 4px 0;
-    border-bottom: 1px solid #4caf50 ;
+  
+    
+}
+
+.textbox input[type="submit"]{
+    border-bottom: none;
 }
 
 
@@ -51,7 +54,7 @@ html,body{
 
 }
 
-.textbox input[type = "text"], .textbox input[type = "password"] ,.textbox input[type = "button"]{
+.textbox input[type = "text"], .textbox input[type = "password"]{
     border: none;
     outline: none;
     background: none;
@@ -60,7 +63,11 @@ html,body{
     
     float: left;
     margin: 0 10px;
-    transition: 0.2s;
+    transition: 0.3s;
+
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50 ;
 
 }
 .textbox input:focus[type = "text"],.textbox input:focus[type = "password"]{
@@ -110,7 +117,7 @@ html,body{
 @media only screen and (max-width:768px){
     .login-box{
         width: 70%;
-        height: 100%;
+        height: auto;
     }
 }
 
