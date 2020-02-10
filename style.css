@@ -1,23 +1,25 @@
 
 
 
-body{
+html,body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background: url(./login3.jpg) no-repeat;
     background-size: cover;
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 
 .login-box{
-    width: 350px;
+    width:30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    height: auto;
     
     
 }
@@ -37,7 +39,7 @@ body{
     overflow: hidden;
     font-size: 20px;
     padding: 8px 0;
-    margin: 8px 0;
+    margin: 4px 0;
     border-bottom: 1px solid #4caf50 ;
 }
 
@@ -49,7 +51,7 @@ body{
 
 }
 
-.textbox input[type = "text"],.textbox input[type = "email"],.textbox input[type = "password"] ,.textbox input[type = "button"]{
+.textbox input[type = "text"], .textbox input[type = "password"] ,.textbox input[type = "button"]{
     border: none;
     outline: none;
     background: none;
@@ -61,7 +63,7 @@ body{
     transition: 0.2s;
 
 }
-.textbox input:focus[type = "text"],.textbox input:focus[type = "password"],.textbox input:focus[type = "email"] ,.textbox input:focus[type = "button"]{
+.textbox input:focus[type = "text"],.textbox input:focus[type = "password"]{
     width:280px;
     border-left: 10px solid  #4caf50;
     
@@ -71,8 +73,8 @@ body{
 
 .btn{
     width: 100%;
-    background: none;
-    border: 2px solid #4caf50;
+    background:  #4caf50;;
+    border: 2px solid #fff;
     color: white;
     padding: 5px;
     font-size: 18px;
@@ -83,7 +85,7 @@ body{
 }
 
 .btn:hover, .btn:focus{
-    background: #4caf50;
+    background: none;
     color: black;
     
 }
@@ -104,5 +106,12 @@ body{
     transform: scale(0.5);
 }
 
+
+@media only screen and (max-width:768px){
+    .login-box{
+        width: 70%;
+        height: 100%;
+    }
+}
 
 

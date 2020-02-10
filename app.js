@@ -1,17 +1,17 @@
 
 
-const submit = document.querySelector('#submit');
+let submit = document.querySelector('#submit');
 
 submit.addEventListener('click', signUp);
 
 
 function signUp(e){
 
-const name = document.getElementById('fullname').value;
-const username = document.getElementById('username').value;
-const password = document.getElementById('password').value;
-const cpass = document.getElementById('cpass').value;
-//const checkbox = document.querySelector('input[type ="checkbox"]:checked').value;
+let name = document.getElementById('fullname').value;
+let username = document.getElementById('username').value;
+let password = document.getElementById('password').value;
+let cpass = document.getElementById('cpass').value;
+//let checkbox = document.querySelector('input[type ="checkbox"]:checked').value;
 
 if (name.trim() && username.trim() && password && cpass){
     e.preventDefault();
@@ -26,7 +26,11 @@ if (name.trim() && username.trim() && password && cpass){
     }
     else{
     alert(' password and confirm password does not match')
+
+    
     }
 }
-
+name = '';
+username = '';
+password = ''
 }
